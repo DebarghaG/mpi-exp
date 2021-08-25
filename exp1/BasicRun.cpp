@@ -15,8 +15,8 @@ int main(int argc, char** argv){
     MPI_Comm_size(MPI_COMM_WORLD, &sizeCluster);
     MPI_Comm_rank(MPI_COMM_WORLD, &processRank);
 
-    printf("Process:%d \t Node:%d", processRank, sizeCluster)
+    printf("Process:%d \t Node:%d \n", processRank, sizeCluster);
 
     MPI_Finalize();
-    return 0
+    return 0;
 }
